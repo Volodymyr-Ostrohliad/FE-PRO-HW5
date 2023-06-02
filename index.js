@@ -5,7 +5,7 @@ let positiveCount = 0;
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] > 0) {
     sumPositive += numbers[i];
-    positiveCount += 1;
+    positiveCount++;
   }
 }
 
@@ -14,15 +14,15 @@ let countNegative = 0;
 
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] < 0) {
-    countNegative += 1;
+    countNegative++;
   }
 }
 
 // Знайти кількість непарних позитивних елементів.
 let coutnPosUnpaired = 0;
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] > 0 && numbers[i] % 2 != 0) {
-    coutnPosUnpaired += 1;
+  if (numbers[i] > 0 && numbers[i] % 2 !== 0) {
+    coutnPosUnpaired++;
   }
 }
 // Визначити кількість парних позитивних елементів.
@@ -30,7 +30,7 @@ for (let i = 0; i < numbers.length; i++) {
 let countPosPaired = 0;
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] > 0 && numbers[i] % 2 === 0) {
-    countPosPaired += 1;
+    countPosPaired++;
   }
 }
 
@@ -49,7 +49,7 @@ for (let i = 0; i < numbers.length; i++) {
 let sumPosUnpaired = 0;
 
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] > 0 && numbers[i] % 2 != 0) {
+  if (numbers[i] > 0 && numbers[i] % 2 !== 0) {
     sumPosUnpaired += numbers[i];
   }
 }
